@@ -13,5 +13,9 @@ handlers:
 - url: /img
   static_dir: static/img
 
+- url: /_ah/remote_api
+  script: _go_app
+  login: admin
+
 - url: /.*
   script: _go_app
